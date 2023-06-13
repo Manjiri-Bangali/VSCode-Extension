@@ -1,8 +1,12 @@
 {
-  "name": "test-generator",
-  "displayName": "test-generator",
+  "name": "mtg-test-generator",
+  "displayName": "mtg-test-generator",
   "description": "A test generator utility that leverages power of OpenAI to generate unit tests (with jest framework) for React components.",
   "publisher": "ManjiriBangali",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Manjiri-Bangali/VSCode-Extension.git"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.79.0"
