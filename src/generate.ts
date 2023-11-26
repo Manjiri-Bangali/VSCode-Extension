@@ -1,15 +1,8 @@
 import { Configuration, OpenAIApi } from "openai";
-import * as vscode from "vscode";
-require("dotenv").config();
+const OPENAI_TOKEN = "Ask-am1zJov1z2NOZdM14PCzT3BlbkFJWjwuUhhMh8bfhmePekyAA";
 
-const token = process.env.OPENAI_TOKEN?.slice(
-  1,
-  process.env.OPENAI_TOKEN.length - 2
-);
-
-vscode.window.showInformationMessage(`Token: ${token}`);
 const configuration = new Configuration({
-  apiKey: token,
+  apiKey: OPENAI_TOKEN?.slice(1, OPENAI_TOKEN.length - 1),
 });
 const openai = new OpenAIApi(configuration);
 const UNIT_TEST_REQUEST = (path: string, code: string) =>
