@@ -1,4 +1,8 @@
 import { Configuration, OpenAIApi } from "openai";
+import * as vscode from "vscode";
+
+let orange = vscode.window.createOutputChannel("Orange");
+orange.appendLine(`Token: ${process.env.OPENAI_TOKEN}, ${process.env}`);
 
 const configuration = new Configuration({
   apiKey: process.env.OPENAI_TOKEN,
