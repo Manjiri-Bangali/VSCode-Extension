@@ -7,7 +7,7 @@
     "type": "git",
     "url": "git@github.com:Manjiri-Bangali/VSCode-Extension.git"
   },
-  "version": "1.0.6",
+  "version": "1.0.7",
   "engines": {
     "vscode": "^1.79.0"
   },
