@@ -1,7 +1,10 @@
 import { Configuration, OpenAIApi } from "openai";
 import * as vscode from "vscode";
+require("dotenv").config();
 
-vscode.window.showInformationMessage(`Token: ${JSON.stringify(process.env)}`);
+vscode.window.showInformationMessage(
+  `Token: ${process.env.OPENAI_TOKEN}, ${JSON.stringify(process.env)}`
+);
 
 const configuration = new Configuration({
   apiKey: process.env.OPENAI_TOKEN,
